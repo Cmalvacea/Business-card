@@ -1,0 +1,77 @@
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+/* Tarjeta superior */
+
+#card {
+    border: 1px solid black;
+    padding: 30px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+#card h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+
+}
+
+#card h2 {
+    font-family: 'Raleway', sans-serif;   
+     font-weight: bold;
+}
+
+#card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+
+/* Detalles */
+
+#Skills {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(180, 180, 180);
+}
+
+
+
+/* Portafolio */
+
+#Portfolio {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    margin: 0%;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#Pages {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 15px;
+    margin: 50px;
+    padding: 5px;
+}
+
+#Pages > div {
+    text-align: center;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid black;
+}
+
+
+#Pages > div > h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Media */
+
