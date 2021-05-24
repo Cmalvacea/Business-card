@@ -3,75 +3,309 @@ body {
     background-color: black;
 }
 
-/* Tarjeta superior */
-
-#card {
-    border: 1px solid black;
-    padding: 30px;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-#card h1 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
-
-}
-
-#card h2 {
-    font-family: 'Raleway', sans-serif;   
-     font-weight: bold;
-}
-
-#card p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-
-/* Detalles */
-
-#Skills {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: rgb(180, 180, 180);
-}
-
-
-
-/* Portafolio */
-
-#Portfolio {
+nav {
     width: 100%;
-    text-align: center;
-    background-color: black;
-    margin: 0%;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
     color: white;
+    justify-content: space-between;
+    width: 40%;
+}
+
+nav ul a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+/* First section */
+
+.First-section  {
+    width: 100%;
+    background-image: url(images/Background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 150px;
+    height: 600px;
+    background-image: cross-fade();
+}
+
+.First-content {
+    color: white;
+    width: 40%;
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+/* Second Section */
+
+
+.Second-section-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 25px;
+    margin-top: 10%;
+}
+
+.Second-section section {
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+
+.Second-section section i {
+    font-size: 70px;
+    color: white;
+}
+
+.Skills {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    color: white;
+    height: 600px;
+}
+
+.Skills i{ 
+    margin:auto;
+    font-size: 125px;
+}
+
+.Skills article {
+    margin:auto;
+    font-size: 25px;
+    width: 70%;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#Pages {
+/*  Portfolio  */
+
+.Portfolio-title {
+    width: 40%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.Portfolio-title p {
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    color: white;
+}
+
+.Portfolio-content {
+    background-color: gray;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 5px;
+    height: fit-content;
+}
+
+
+.Portfolio-title,
+.Portfolio-content {
+    margin: auto;
+}
+
+.Portfolio-image {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.Portfolio-image:hover {
+    background-color: white;
+    opacity: 25%;
+}
+
+.Portfolio-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Third section */
+
+.Third-section {
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-top: 10%;
+}
+
+.Third-section h1 {
+    text-align: center;
+    padding-bottom: 45px;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+.Contact-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 55px;
+}
+
+.Work-media {
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.Work-media button {
+    background: none;
+    border: none;
+}
+
+.Work-media button i {
+    color: white;
+    font-size: 85px;
+}
+
+.Work-media button i:hover {
+    color: rgb(21, 47, 196);
+}
+
+.Work-media a {
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
+/* Footer */
+
+footer {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    gap: 15px;
-    margin: 50px;
-    padding: 5px;
+    background-color: rgb(37, 37, 37);
+    padding: 15px;
+    margin-top: 15%;
 }
 
-#Pages > div {
-    text-align: center;
-    background-color: white;
-    font-family: 'Raleway', sans-serif;
-    border: 1px solid black;
+footer div {
+    margin: auto;
+    color: white;
+    font-family: sans-serif;
 }
 
-
-#Pages > div > h1 {
-    font-family: 'Roboto Condensed', sans-serif;
+footer div a {
+    color: rgb(57, 57, 196);
+    text-decoration: none;
 }
 
-/* Media */
+/* Media  */ 
 
+@media(max-width: 480px) {
+
+
+    /* Mobile nav */
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    nav ul a {
+        font-size: 15px;
+    }
+
+    /* Mobile first section */
+
+    .First-section {
+        background-size: cover;
+    }
+
+    .First-content {
+        font-size: 1.5em;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+
+    /* Mobile second section */
+
+    .Second-section-grid section {
+        font-size: 1em;
+    }
+
+    .Second-section-grid section i {
+        font-size: 25px;
+    }
+
+    .Skills article {
+        font-size: 1em;
+    }
+
+    .Skills i {
+        font-size: 55px;
+    }
+
+    /* Mobile portfolio Section */
+
+    .Portfolio-section {
+        width: 100%;
+    }
+
+    .Portfolio-title p{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .Portfolio-content {
+        width: 100%;
+    }
+
+    .Portfolio-image {
+        height: 80px;
+    }
+
+    /* Mobile Third Section */
+
+    .Contact-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .Work-media {
+        font-size: 15px;
+        margin: auto;
+    }
+
+
+    /* Footer */
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .Last-media {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .Last-media i {
+        font-size: 15px;
+    }
+}
