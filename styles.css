@@ -1,18 +1,22 @@
 body {
     margin: 0px;
-    background-color: black;
 }
 
 nav {
     width: 100%;
-    position: fixed;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 
 nav ul {
     display: flex;
     color: white;
     justify-content: space-between;
-    width: 40%;
+    width: 70%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 nav ul a {
@@ -22,86 +26,185 @@ nav ul a {
     font-family: sans-serif;
 }
 
+nav ul a:hover {
+    color: grey;
+}
+
+.Nav-contact {
+    width: 50%;
+}
+
+.Nav-contact button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.Nav-contact i {
+    font-size: 28px;
+}
+
 
 /* First section */
 
-.First-section  {
+.First-Section  {
     width: 100%;
-    background-image: url(images/Background.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding-top: 150px;
-    height: 600px;
-    background-image: cross-fade();
 }
 
-.First-content {
-    color: white;
-    width: 40%;
-    margin-left: 5%;
-    font-size: 30px;
+
+.First-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 10%;
 }
+
+.Motto-Contact {
+    font-size: 65px;
+    font-family: Roboto Condensed;
+}
+
+
+.Motto-Contact button {
+    background: none;
+    border: 3px solid rgb(23, 122, 23);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.Motto-Contact a {
+    color: rgb(23, 122, 23);
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+
+.Motto-Contact button:hover,
+.Motto-Contact a:hover {
+    color: white;
+    background-color: rgb(23, 122, 23);
+}
+
+.Profile-photo {
+    border: 1px solid black;
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+}
+
+
+
 
 /* Second Section */
 
+.Second-section {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
 
 .Second-section-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 25px;
-    margin-top: 10%;
+    grid-template-columns: 50% 50%;
 }
 
-.Second-section section {
+.Skills-text {
+    font-family: Roboto Condensed;
+    text-align: left;
+}
+
+.Skills-text h3 {
+    font-size: 30px;
+}
+
+.Skills-text p {
+    font-size: 20px;
+}
+
+.Icon-section,
+.Icon-section article {
+    display: flex;
+    justify-content: space-between;
     margin: auto;
-    font-size: 25px;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
 }
 
-.Second-section section i {
-    font-size: 70px;
-    color: white;
+/* Third section */
+
+.Third-section {
+    width: 100%;
+    background-color: gainsboro;
+    padding-bottom: 200px;
 }
 
-.Skills {
+.Third-section-grid {
     display: grid;
-    grid-template-columns: 40% 60%;
-    color: white;
-    height: 600px;
+    grid-template-columns: 2fr 2fr 2fr;
+    margin: 20px;
+
 }
 
-.Skills i{ 
-    margin:auto;
-    font-size: 125px;
+.Third-section-title {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    font-size: 2em;
+    font-family: Roboto Condensed;
 }
 
-.Skills article {
-    margin:auto;
-    font-size: 25px;
+.Skill-card {
+    border-radius: 8px;
     width: 70%;
-    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    padding: 25px;
+    margin: auto;
 }
+
+.Skill-card:hover {
+    color: white;
+    background-color: rgb(32, 68, 167);
+}
+
+.Skill-card p {
+    font-size: 20px;
+}
+
+.Skill-card i {
+    font-size: 55px;
+}
+
+
+
+
 
 /*  Portfolio  */
+
+.Portfolio-section {
+    background-color: rgb(180, 180, 180);
+    height: 100%;
+    padding-bottom: 200px;
+}
 
 .Portfolio-title {
     width: 40%;
     text-align: center;
-    padding-bottom: 40px;
+    padding-top: 100px;
 }
 
 .Portfolio-title p {
     font-family: sans-serif;
     font-size: 45px;
     font-weight: 400;
-    color: white;
 }
 
 .Portfolio-content {
-    background-color: gray;
+    background-color: white;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -133,56 +236,9 @@ nav ul a {
     height: 100%;
 }
 
-
-/* Third section */
-
-.Third-section {
-    width: 100%;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin-top: 10%;
-}
-
-.Third-section h1 {
-    text-align: center;
-    padding-bottom: 45px;
-    color:white;
+.Portfolio-image h3 {
+    margin: 25%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-}
-
-.Contact-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 55px;
-}
-
-.Work-media {
-    text-align: center;
-    margin: auto;
-    color: white;
-    font-family: sans-serif;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.Work-media button {
-    background: none;
-    border: none;
-}
-
-.Work-media button i {
-    color: white;
-    font-size: 85px;
-}
-
-.Work-media button i:hover {
-    color: rgb(21, 47, 196);
-}
-
-.Work-media a {
-    text-align: center;
-    text-decoration: none;
 }
 
 
@@ -195,7 +251,6 @@ footer {
     grid-template-columns: 33% 33% 33%;
     background-color: rgb(37, 37, 37);
     padding: 15px;
-    margin-top: 15%;
 }
 
 footer div {
@@ -207,105 +262,4 @@ footer div {
 footer div a {
     color: rgb(57, 57, 196);
     text-decoration: none;
-}
-
-/* Media  */ 
-
-@media(max-width: 480px) {
-
-
-    /* Mobile nav */
-
-    nav {
-        width: 100%;
-    }
-
-    nav ul {
-        width: 80%;
-        justify-content: space-between;
-    }
-
-    nav ul a {
-        font-size: 15px;
-    }
-
-    /* Mobile first section */
-
-    .First-section {
-        background-size: cover;
-    }
-
-    .First-content {
-        font-size: 1.5em;
-        width: 70%;
-        text-align: center;
-        margin: auto;
-    }
-
-    /* Mobile second section */
-
-    .Second-section-grid section {
-        font-size: 1em;
-    }
-
-    .Second-section-grid section i {
-        font-size: 25px;
-    }
-
-    .Skills article {
-        font-size: 1em;
-    }
-
-    .Skills i {
-        font-size: 55px;
-    }
-
-    /* Mobile portfolio Section */
-
-    .Portfolio-section {
-        width: 100%;
-    }
-
-    .Portfolio-title p{
-        text-align: center;
-        font-size: 2em;
-    }
-
-    .Portfolio-content {
-        width: 100%;
-    }
-
-    .Portfolio-image {
-        height: 80px;
-    }
-
-    /* Mobile Third Section */
-
-    .Contact-section {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-
-    .Work-media {
-        font-size: 15px;
-        margin: auto;
-    }
-
-
-    /* Footer */
-
-
-    footer {
-        display: grid;
-        grid-template-columns: 100%;
-    }
-
-    .Last-media {
-        width: 100%;
-        font-size: 12px;
-    }
-
-    .Last-media i {
-        font-size: 15px;
-    }
 }
