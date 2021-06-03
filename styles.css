@@ -3,110 +3,132 @@ body {
 }
 
 nav {
-    width: 100%;
-    background-color: black;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-}
-
-nav ul {
-    display: flex;
-    color: white;
-    justify-content: space-between;
-    width: 70%;
-    margin: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    grid-template-columns: 2fr 2fr 2fr;
+    padding: 15px 0 15px 0;
 }
 
 nav ul a {
-    font-size: 20px;
-    color: white;
     text-decoration: none;
-    font-family: sans-serif;
+    color: black;
+    font-size: 21px;
+    padding: 8px;
+    font-family: Roboto Condensed;
+    font-weight: 550;
 }
 
 nav ul a:hover {
-    color: grey;
+    color: rgb(175, 7, 7);
 }
 
-.Nav-contact {
-    width: 50%;
-}
 
-.Nav-contact button {
+nav ul button {
     background: none;
     border: none;
     outline: none;
 }
 
-.Nav-contact i {
-    font-size: 28px;
+nav ul {
+    margin: auto;
+    display: flex;
 }
+
+.Nav-sections i {
+    display: none;
+}
+
+/* Super container */
+
+.Everything-Container {
+    height: fit-content;
+    margin-top: 5%;
+}
+
 
 
 /* First section */
 
-.First-Section  {
-    width: 100%;
-}
-
 
 .First-grid {
     display: grid;
-    grid-template-columns: 60% 40%;
-    margin: 10%;
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+    margin-left: 8%;
+    margin-top: 8%;
 }
 
 .Motto-Contact {
-    font-size: 65px;
     font-family: Roboto Condensed;
+}
+
+.Motto-Contact section h1 {
+    font-size: 65px;
+}
+
+.Motto-Contact section p {
+    font-size: 35px;
+    width: 90%;
+}
+
+.Motto-Contact div {
+    display: flex;
+    width: 100%;
+    gap: 15px;
 }
 
 
 .Motto-Contact button {
     background: none;
-    border: 3px solid rgb(23, 122, 23);
-    border-radius: 10px;
     padding: 10px;
-}
-
-
-.Motto-Contact a {
-    color: rgb(23, 122, 23);
     font-size: 20px;
     font-family: sans-serif;
     text-decoration: none;
+    width: 40%;
 }
 
+#Info-button {
+    border: 2px solid rgb(184, 32, 32);
+    color: rgb(184, 32, 32);
+}
 
-
-.Motto-Contact button:hover,
-.Motto-Contact a:hover {
+#Info-button:hover {
+    background-color: rgb(184, 32, 32);
     color: white;
-    background-color: rgb(23, 122, 23);
 }
 
-.Profile-photo {
-    border: 1px solid black;
-    border-radius: 100%;
-    height: 400px;
-    width: 400px;
+#Contact-button {
+    border: 2px solid rgb(184, 32, 32);
+    color: rgb(184, 32, 32);
 }
 
+#Contact-button:hover {
+    background-color: rgb(184, 32, 32);
+    color: white;
+}
 
+.Mobile-Photo {
+    display: none;
+}
+
+.Desktop-Photo {
+    display: block;
+        width: 350px;
+        height: 350px;
+        border: 1px solid black;
+        border-radius: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+}
 
 
 /* Second Section */
 
-.Second-section {
-    width: 100%;
-    background-color: rgb(240, 240, 240);
-}
 
 .Second-section-grid {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-right: 5%;
+    margin-top: 7%;
 }
 
 .Skills-text {
@@ -131,104 +153,58 @@ nav ul a:hover {
     font-size: 20px;
 }
 
-/* Third section */
 
-.Third-section {
-    width: 100%;
-    background-color: gainsboro;
-    padding-bottom: 200px;
-}
+
+/* Third section */
 
 .Third-section-grid {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    margin: 20px;
-
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-items: center;
+    margin: 10%;
 }
 
-.Third-section-title {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    font-size: 2em;
+.Third-section-grid {
     font-family: Roboto Condensed;
+    font-size: 1.5em;
+}
+
+.Third-section-skills {
+    text-align: center;
 }
 
 .Skill-card {
-    border-radius: 8px;
-    width: 70%;
     text-align: center;
-    font-size: 1.5em;
-    font-family: sans-serif;
-    padding: 25px;
-    margin: auto;
+    padding: 15px;
 }
-
-.Skill-card:hover {
-    color: white;
-    background-color: rgb(32, 68, 167);
-}
-
-.Skill-card p {
-    font-size: 20px;
-}
-
-.Skill-card i {
-    font-size: 55px;
-}
-
-
 
 
 
 /*  Portfolio  */
 
-.Portfolio-section {
-    background-color: rgb(180, 180, 180);
-    height: 100%;
-    padding-bottom: 200px;
-}
 
-.Portfolio-title {
-    width: 40%;
-    text-align: center;
-    padding-top: 100px;
-}
-
-.Portfolio-title p {
-    font-family: sans-serif;
-    font-size: 45px;
-    font-weight: 400;
-}
 
 .Portfolio-content {
+    margin-top: 5%;
     background-color: white;
-    width: 90%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-radius: 5px;
+    grid-template-columns: repeat(4, 1fr);
     height: fit-content;
 }
 
 
-.Portfolio-title,
-.Portfolio-content {
-    margin: auto;
-}
 
 .Portfolio-image {
     width: 100%;
     height: fit-content;
     text-align: center;
-    height: 250px;
-    border: 1px solid black;
+    background-color: white;
 }
 
 .Portfolio-image:hover {
-    background-color: white;
-    opacity: 25%;
+    opacity: 95%;
 }
 
 .Portfolio-image img {
@@ -242,24 +218,207 @@ nav ul a:hover {
 }
 
 
-
-
-/* Footer */
-
-footer {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    background-color: rgb(37, 37, 37);
-    padding: 15px;
+.Second-section,
+.Third-section,
+.Portfolio-section {
+    display: none;
 }
 
-footer div {
-    margin: auto;
-    color: white;
-    font-family: sans-serif;
-}
+/*  Media */
 
-footer div a {
-    color: rgb(57, 57, 196);
-    text-decoration: none;
+@media(max-width: 480px) {
+
+
+
+    /* Navegation */
+
+    nav {
+        position: fixed;
+        bottom: 0%;
+        background-color: black;
+    }
+
+    nav ul {
+        padding: 5px;
+    }
+
+
+    .Nav-title,
+    .Nav-contact{
+        display: none;
+    }
+
+    .Nav-sections {
+        justify-content: space-between;
+    }
+
+
+    .Nav-sections a{
+        font-size: 15px;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+        justify-items: center;
+        padding: 0 15px 0 15px;
+        color: white;
+    }
+
+    .Nav-sections i {
+        display: block;
+        font-size: 12px;
+    }
+
+    /* First section */
+
+    .Desktop-Photo {
+        display: none;
+    }
+
+    .Mobile-Photo {
+        display: block;
+        width: 250px;
+        height: 250px;
+        border: 1px solid black;
+        border-radius: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .First-Section {
+        padding-bottom: 200px;
+    }
+
+    .First-grid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .Motto-Contact section {
+        text-align: center;
+        margin: auto;
+    }
+
+    .Motto-Contact section h1 {
+        font-size: 2em;
+    }
+
+    .Motto-Contact section p {
+        font-size: 20px;
+    }
+
+    .Motto-Contact button {
+        padding: 5px;
+        margin: auto;
+    }
+
+
+    /* Second section */
+
+    .Second-section-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 10px;
+    }
+
+
+    .Skills-text {
+        font-size: 0.5em;
+        text-align: center;
+    }
+
+    .Icon-section {
+        width: 90%;
+    }
+
+    .Icon-section article{
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    /* Third section */
+
+    .Third-section {
+        padding-bottom: 100px;
+    }
+
+    .Third-section-Experience {
+        font-size: 20px;
+    } 
+
+    .Third-section-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .Third-section-skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+
+    .Skill-card {
+        margin: auto;
+    }
+
+    .Skill-card h3 {
+        font-size: 18px;
+    }
+
+    .Skill-card  p {
+        font-size: 20px;
+    }
+
+    .Skill-card i {
+        font-size: 35px;
+    }
+
+
+
+    /* Portfolio */
+
+    .Portfolio-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 0%;
+    }
+
+    .Portfolio-title p{
+        font-size: 20px;
+    }
+
+    .Portfolio-image h3 {
+        font-size: 10px;
+    }
+
+    .Portfolio-image img {
+        border-radius: 0px;
+    }
+
+    .Portfolio-image {
+        height: 200px;
+    }
+
+    .Third-section {
+        display: none
+    }
+
+    /*Footer */
+
+    footer {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .Last-media ul li {
+        list-style: none;
+    }
+
+    footer div {
+        text-align: center;
+    }
+
 }
